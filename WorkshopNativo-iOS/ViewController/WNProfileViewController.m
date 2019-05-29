@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) WNUserModel *userModel;
 @property (weak, nonatomic) IBOutlet UILabel *lblWelcome;
+@property (weak, nonatomic) IBOutlet UIImageView *imgProfile;
 
 @end
 
@@ -39,8 +40,13 @@
 }
 
 - (void)setupView {
-    _lblWelcome.text = [_lblWelcome.text stringByAppendingString:_userModel.user];
+    dispatch_async(dispatch_get_global_queue(0,0), ^{
+        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://static.lamusica.com/wp-content/uploads/sites/16/2017/07/emoji_update_2017_1.png"]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.imgProfile.image = [UIImage imageWithData:data];
+        });
+    });
+    self.lblWelcome.text = [self.lblWelcome.text stringByAppendingString:self.userModel.user];
 }
-
 
 @end

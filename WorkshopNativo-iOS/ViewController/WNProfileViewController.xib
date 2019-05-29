@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WNProfileViewController">
             <connections>
+                <outlet property="imgProfile" destination="42E-nY-GzQ" id="hYK-R9-BwM"/>
                 <outlet property="lblWelcome" destination="sol-UR-eLH" id="Bri-RE-trG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,11 +28,20 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="42E-nY-GzQ">
+                    <rect key="frame" x="87" y="107" width="201" height="200"/>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="sol-UR-eLH" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="573-3t-eVc"/>
+                <constraint firstItem="42E-nY-GzQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6zj-eW-NXS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="42E-nY-GzQ" secondAttribute="trailing" constant="87" id="8s1-xq-Eky"/>
+                <constraint firstItem="sol-UR-eLH" firstAttribute="top" secondItem="42E-nY-GzQ" secondAttribute="bottom" constant="26" id="IpQ-vV-z6L"/>
+                <constraint firstItem="42E-nY-GzQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="87" id="VcC-YJ-L51"/>
                 <constraint firstItem="sol-UR-eLH" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="aia-T5-yze"/>
+                <constraint firstItem="42E-nY-GzQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="87" id="bcc-2l-nVH"/>
+                <constraint firstItem="42E-nY-GzQ" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="vJ9-Z6-nZV"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>

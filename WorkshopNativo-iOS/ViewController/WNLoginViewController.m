@@ -10,7 +10,7 @@
 #import "WNProfileViewController.h"
 #import "WNUserModel.h"
 
-@interface WNLoginViewController ()
+@interface WNLoginViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *txtUser;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
@@ -22,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];    
     _txtPassword.secureTextEntry = YES;
+    _txtUser.delegate = self;
+    _txtPassword.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -57,5 +59,13 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
+    if (theTextField == self.txtUser) {
+        [self.txtPassword becomeFirstResponder];
+    } else if (theTextField == self.txtPassword) {
+        [theTextField resignFirstResponder];
+    }
+    return YES;
+}
 
 @end
