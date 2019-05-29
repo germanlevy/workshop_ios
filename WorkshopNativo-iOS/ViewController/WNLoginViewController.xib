@@ -36,23 +36,28 @@
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-kE-Dhh">
                     <rect key="frame" x="103" y="342" width="177" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="F7A-pa-7Um"/>
+                    </constraints>
                     <state key="normal" title="Iniciar Sesión"/>
                     <connections>
                         <action selector="login:" destination="-1" eventType="touchUpInside" id="kFh-lh-6Qx"/>
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="meli_1024" translatesAutoresizingMaskIntoConstraints="NO" id="3XB-Xp-yL1">
-                    <rect key="frame" x="137" y="93" width="100" height="100"/>
+                    <rect key="frame" x="137.5" y="93" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="aev-XH-jAg"/>
+                        <constraint firstAttribute="height" constant="100" id="ss0-Vc-x8G"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="580-mP-hoN" secondAttribute="trailing" constant="50" id="1f9-zy-sPD"/>
+                <constraint firstItem="3XB-Xp-yL1" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="IoU-p4-xmi"/>
                 <constraint firstItem="580-mP-hoN" firstAttribute="top" secondItem="YFp-Bg-ute" secondAttribute="bottom" constant="17" id="JQJ-r8-Jis"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="YFp-Bg-ute" secondAttribute="trailing" constant="50" id="KbD-ea-jOI"/>
-                <constraint firstItem="3XB-Xp-yL1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="137" id="ONg-TO-iZ9"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="wmc-kE-Dhh" secondAttribute="bottom" constant="295" id="QAk-qa-nV2"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="3XB-Xp-yL1" secondAttribute="trailing" constant="138" id="cFS-cq-blc"/>
                 <constraint firstItem="YFp-Bg-ute" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="eoZ-ck-1OA"/>
                 <constraint firstItem="wmc-kE-Dhh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="103" id="fVa-mO-fQ6"/>
                 <constraint firstItem="wmc-kE-Dhh" firstAttribute="top" secondItem="580-mP-hoN" secondAttribute="bottom" constant="30" id="iBb-Z4-PxU"/>

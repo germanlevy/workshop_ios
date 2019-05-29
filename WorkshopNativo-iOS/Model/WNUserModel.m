@@ -8,14 +8,22 @@
 
 #import "WNUserModel.h"
 
+@interface WNUserModel ()
+@property (nonatomic, copy) NSString *user;
+@end
+
 @implementation WNUserModel
 
-- (instancetype)initFromDictionary:(NSDictionary *)dictionary {
+- (instancetype) initWithUserName:(NSString *)user {
     self = [super init];
     if(self) {
-        _user = [dictionary valueForKey:@"user"];
+        _user = user;
     }
     return self;
+}
+
+- (NSString *) user {
+    return _user;
 }
 
 @end
