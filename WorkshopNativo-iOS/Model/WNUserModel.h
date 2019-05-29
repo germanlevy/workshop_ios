@@ -10,8 +10,7 @@
 
 @interface WNUserModel : NSObject
 
-@property (nonatomic, copy) NSString *user;
-
--(instancetype) initFromDictionary:(NSDictionary *)dictionary;
+-(instancetype) initWithUserName:(NSString *)user;
+- (NSString *) user;
 
 @end

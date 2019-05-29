@@ -23,24 +23,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sol-UR-eLH">
-                    <rect key="frame" x="143" y="333" width="89" height="21"/>
+                    <rect key="frame" x="143.5" y="333" width="88.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="42E-nY-GzQ">
-                    <rect key="frame" x="87" y="107" width="201" height="200"/>
+                    <rect key="frame" x="112" y="157" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="lIc-L6-h3D"/>
+                        <constraint firstAttribute="height" constant="150" id="wPD-u3-SMW"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="sol-UR-eLH" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="573-3t-eVc"/>
                 <constraint firstItem="42E-nY-GzQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6zj-eW-NXS"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="42E-nY-GzQ" secondAttribute="trailing" constant="87" id="8s1-xq-Eky"/>
                 <constraint firstItem="sol-UR-eLH" firstAttribute="top" secondItem="42E-nY-GzQ" secondAttribute="bottom" constant="26" id="IpQ-vV-z6L"/>
-                <constraint firstItem="42E-nY-GzQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="87" id="VcC-YJ-L51"/>
                 <constraint firstItem="sol-UR-eLH" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="aia-T5-yze"/>
-                <constraint firstItem="42E-nY-GzQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="87" id="bcc-2l-nVH"/>
                 <constraint firstItem="42E-nY-GzQ" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="vJ9-Z6-nZV"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

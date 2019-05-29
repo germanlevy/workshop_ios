@@ -21,9 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];    
-    _txtPassword.secureTextEntry = YES;
-    _txtUser.delegate = self;
-    _txtPassword.delegate = self;
+    self.txtPassword.secureTextEntry = YES;
+    self.txtUser.delegate = self;
+    self.txtPassword.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -32,15 +32,14 @@
 }
 
 - (IBAction)login:(UIButton *)sender {
-    if([_txtUser.text isEqual:@""] ||  [_txtPassword.text isEqual: @""]) {
+    if([self.txtUser.text isEqual:@""] ||  [_txtPassword.text isEqual: @""]) {
         [self showAlertError:@"Debes completar todos los campos"];
     }
-    else if (![_txtPassword.text isEqual: @"password"]) {
+    else if (![self.txtPassword.text isEqual: @"password"]) {
         [self showAlertError:@"Contraseña inválida. Prueba con 'password'"];
     }
     else {
-        WNUserModel *userModel = [[WNUserModel alloc] init];
-        userModel.user = _txtUser.text;
+        WNUserModel *userModel = [[WNUserModel alloc] initWithUserName:self.txtUser.text];
         
         WNProfileViewController *profileViewController = [[WNProfileViewController alloc] initWithModel:userModel];
         [self.navigationController pushViewController:profileViewController animated:YES];
