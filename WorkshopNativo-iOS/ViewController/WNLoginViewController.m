@@ -7,7 +7,6 @@
 //
 
 #import "WNLoginViewController.h"
-#import "WNProfileViewController.h"
 #import "WNUserModel.h"
 
 @interface WNLoginViewController () <UITextFieldDelegate>
@@ -39,10 +38,9 @@
         [self showAlertError:@"Contraseña inválida. Prueba con 'password'"];
     }
     else {
-        WNUserModel *userModel = [[WNUserModel alloc] initWithUserName:self.txtUser.text];
         
-        WNProfileViewController *profileViewController = [[WNProfileViewController alloc] initWithModel:userModel];
-        [self.navigationController pushViewController:profileViewController animated:YES];
+        // TODO Crear pantalla de perfil y mostrarla con el dato del usuario!
+        
     }
 }
 

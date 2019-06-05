@@ -15,8 +15,6 @@
 		B3862610229C1A590047B24E /* WorkshopNativo_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B386260F229C1A590047B24E /* WorkshopNativo_iOSUITests.m */; };
 		B3862622229C1B280047B24E /* WNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3862620229C1B280047B24E /* WNLoginViewController.m */; };
 		B3862623229C1B280047B24E /* WNLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3862621229C1B280047B24E /* WNLoginViewController.xib */; };
-		B3862627229C20610047B24E /* WNProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3862625229C20610047B24E /* WNProfileViewController.m */; };
-		B3862628229C20610047B24E /* WNProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3862626229C20610047B24E /* WNProfileViewController.xib */; };
 		B386262B229C216A0047B24E /* WNUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B386262A229C216A0047B24E /* WNUserModel.m */; };
 /* End PBXBuildFile section */
 
@@ -54,9 +52,6 @@
 		B386261F229C1B280047B24E /* WNLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNLoginViewController.h; sourceTree = "<group>"; };
 		B3862620229C1B280047B24E /* WNLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNLoginViewController.m; sourceTree = "<group>"; };
 		B3862621229C1B280047B24E /* WNLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WNLoginViewController.xib; sourceTree = "<group>"; };
-		B3862624229C20610047B24E /* WNProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNProfileViewController.h; sourceTree = "<group>"; };
-		B3862625229C20610047B24E /* WNProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNProfileViewController.m; sourceTree = "<group>"; };
-		B3862626229C20610047B24E /* WNProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WNProfileViewController.xib; sourceTree = "<group>"; };
 		B3862629229C216A0047B24E /* WNUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNUserModel.h; sourceTree = "<group>"; };
 		B386262A229C216A0047B24E /* WNUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNUserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,9 +140,6 @@
 				B386261F229C1B280047B24E /* WNLoginViewController.h */,
 				B3862620229C1B280047B24E /* WNLoginViewController.m */,
 				B3862621229C1B280047B24E /* WNLoginViewController.xib */,
-				B3862624229C20610047B24E /* WNProfileViewController.h */,
-				B3862625229C20610047B24E /* WNProfileViewController.m */,
-				B3862626229C20610047B24E /* WNProfileViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -265,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B38625F8229C1A590047B24E /* LaunchScreen.storyboard in Resources */,
-				B3862628229C20610047B24E /* WNProfileViewController.xib in Resources */,
 				B38625F5229C1A590047B24E /* Assets.xcassets in Resources */,
 				B3862623229C1B280047B24E /* WNLoginViewController.xib in Resources */,
 			);
@@ -296,7 +287,6 @@
 				B386262B229C216A0047B24E /* WNUserModel.m in Sources */,
 				B38625ED229C1A570047B24E /* AppDelegate.m in Sources */,
 				B3862622229C1B280047B24E /* WNLoginViewController.m in Sources */,
-				B3862627229C20610047B24E /* WNProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
